@@ -3,7 +3,7 @@ class School
   
   def initialize(name)
     @name = name
-    @roster = {}
+    @roster = hash.new
   end
   def add_student(name, grade)
     if @roster[grade]
