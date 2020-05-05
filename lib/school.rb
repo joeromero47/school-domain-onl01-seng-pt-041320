@@ -5,10 +5,7 @@ class School
     @name = name
     @roster = {}
   end
-  def add_student
-    @add_student
+  def add_student(name, grade)
+    @roster
   end
-  def clear_roster
-    @roster.clear
-  end
-end
+  
