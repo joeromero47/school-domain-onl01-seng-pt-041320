@@ -3,14 +3,10 @@ class School
   
   def initialize(name)
     @name = name
-    @roster = hash.new
+    @roster = Hash.new {|h, k| h[k] = []}
   end
   def add_student(name, grade)
-    if @roster[grade]
-      @roster[grade] << name
-    else
-      @roster[grade] = [name]
-    end
+      self.roster[grade] << [name]
   end
 end
   
