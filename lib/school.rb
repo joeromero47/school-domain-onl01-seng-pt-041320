@@ -8,4 +8,7 @@ class School
   def add_student
     @add_student
   end
+  def clear_roster
+    @roster.clear
+  end
 end
